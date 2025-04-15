@@ -1,0 +1,5 @@
+# Ignore system/user folders
+AppData/
+*.jtx
+*.frag
+*.vert
