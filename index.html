@@ -25,15 +25,11 @@
         <div class="blob delay"></div>
       </div>
         
-        <nav class="navbar">
+        <nav class="navbar1">
             <div class="navbar-logo">
-                <a href="../Zenovate-solution.HTML"><img src="Zenovate-solution-icon1.png"></a>
-              <!-- <h1>Zenovate Solution</h1> -->
+                <a href="../index.html"><img id="navbar-logoo" src="Zenovate-solution-icon1.png" alt="Zenovate Logo" ></a>
             </div>
-            <ul class="navbar-menu">
-              <li><a href="../">Home</a></li>
-              <li><a href="../about.html">About Us</a></li>
-          
+            <ul class="navbar-menu">       
               <!-- Dropdown starts -->
               <li class="dropdown">
                 <a href="../services.html">Services ▾</a>
@@ -45,12 +41,16 @@
                 </ul>
               </li>
               <!-- Dropdown ends -->
-          
-              <li><a href="../contact-us.html">Contact Us</a></li>
+              <li><a href="../">Industries</a></li>
+              <li><a href="../">Insights</a></li>
+              <li><a href="../about.html">About </a></li>
+              <li><a href="../">Careers</a></li>          
+              <li><a href="../contact-us.html">Contact</a></li>
             </ul>
             
             <div class="navbar-search">
-              <input type="text" placeholder="Search...">
+              <!-- <input type="text" placeholder="Search..."> -->
+              <a href="" class="header-btn">Get Started</a>
             </div>
           </nav>
           
@@ -220,5 +220,37 @@
         </div>
     </div>
 </footer>
+
+<script>
+    window.addEventListener("scroll", function() {
+  const header = document.querySelector("header");
+  header.classList.toggle("scrolled", window.scrollY > 0);
+});
+
+    document.addEventListener("DOMContentLoaded", function () {
+    const navbar = document.querySelector(".navbar");
+    const logoImg = document.getElementById("navbar-logoo");
+    window.addEventListener("scroll", function () {
+      if (window.scrollY > 20) {
+        navbar.classList.add("scrolled");
+        logoImg.src = "Zenovate-solution-logo-white.png"; // Black logo
+        logoImg.style.width = "70px";  // new width
+      logoImg.style.height = "65px";
+      logoImg.style.padding = "0px";  // new width
+      logoImg.style.margin = "0px";
+      } else {
+        navbar.classList.remove("scrolled");
+        logoImg.src = "Zenovate-solution-icon1.1.png"; // White logo
+        logoImg.style.width = "70px";  // new width
+      logoImg.style.height = "65px";
+      }
+    });
+  });
+
+
+
+    
+  </script>
+  
 </body>
 </html>

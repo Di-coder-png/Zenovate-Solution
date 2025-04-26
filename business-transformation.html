@@ -10,27 +10,24 @@
     
 </head>
 <body>
-    <ul class="circles">
-        <li></li><li></li><li></li><li></li><li></li>
-        <li></li><li></li><li></li><li></li><li></li>
-      </ul>
-      <ul class="background-squares">
-        <li></li><li></li><li></li><li></li><li></li>
-        <li></li><li></li><li></li><li></li><li></li>
-      </ul>
-      <div class="blob-container">
-        <div class="blob"></div>
-        <div class="blob delay"></div>
-      </div>
-      <nav class="navbar">
+  <ul class="circles">
+    <li></li><li></li><li></li><li></li><li></li>
+    <li></li><li></li><li></li><li></li><li></li>
+  </ul>
+  <ul class="background-squares">
+    <li></li><li></li><li></li><li></li><li></li>
+    <li></li><li></li><li></li><li></li><li></li>
+  </ul>
+  <div class="blob-container">
+    <div class="blob"></div>
+    <div class="blob delay"></div>
+  </div>
+    
+    <nav class="navbar">
         <div class="navbar-logo">
-          <a href="../Zenovate-solution.HTML"><img src="Zenovate-solution-icon1.png"></a>
-        <!-- <h1>Zenovate Solution</h1> -->
-      </div>
-        <ul class="navbar-menu">
-          <li><a href="../">Home</a></li>
-          <li><a href="../about.html">About Us</a></li>
-      
+            <a href="../index.html"><img id="navbar-logoo" src="Zenovate-solution-icon1.png" alt="Zenovate Logo" ></a>
+        </div>
+        <ul class="navbar-menu">       
           <!-- Dropdown starts -->
           <li class="dropdown">
             <a href="../services.html">Services ▾</a>
@@ -38,15 +35,20 @@
               <li><a href="../Strategy-Consulting.html">Strategy Consulting</a></li>
               <li><a href="../business-transformation.html">Business Transformation</a></li>
               <li><a href="../technology-consultion.html">Technology Consulting</a></li>
-              <li><a href="../digital-marketing.html#">Digital Marketing</a></li>
+              <li><a href="../digital-marketing.html">Digital Marketing</a></li>
             </ul>
           </li>
           <!-- Dropdown ends -->
-      
-          <li><a href="../contact-us.html">Contact Us</a></li>
-        </ul>        
+          <li><a href="../">Industries</a></li>
+          <li><a href="../">Insights</a></li>
+          <li><a href="../about.html">About </a></li>
+          <li><a href="../">Careers</a></li>          
+          <li><a href="../contact-us.html">Contact</a></li>
+        </ul>
+        
         <div class="navbar-search">
-          <input type="text" placeholder="Search...">
+          <!-- <input type="text" placeholder="Search..."> -->
+          <a href="" class="header-btn">Get Started</a>
         </div>
       </nav>
 
@@ -146,5 +148,33 @@
           </div>
         </footer>
       </div>  
+
+<script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+        const navbar = document.querySelector(".navbar");
+        const logoImg = document.getElementById("navbar-logoo");
+        window.addEventListener("scroll", function () {
+          if (window.scrollY > 20) {
+            navbar.classList.add("scrolled");
+            logoImg.src = "Zenovate-solution-logo-white.png"; // Black logo
+            logoImg.style.width = "70px";  // new width
+          logoImg.style.height = "65px";
+          logoImg.style.padding = "0px";  // new width
+          logoImg.style.margin = "0px";
+          } else {
+            navbar.classList.remove("scrolled");
+            logoImg.src = "Zenovate-solution-icon1.1.png"; // White logo
+            logoImg.style.width = "70px";  // new width
+          logoImg.style.height = "65px";
+          }
+        });
+      });
+    
+    
+    
+        
+      </script>
+
 </body>
 </html>
