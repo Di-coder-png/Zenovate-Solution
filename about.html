@@ -169,5 +169,27 @@ window.addEventListener("scroll", function() {
         
       </script>
 
+<script type="text/javascript">
+  (function() {
+      // Create and append the chat-bot element
+      var chatBotEl = document.createElement('chat-bot');
+      chatBotEl.setAttribute('platform_id', '223c4780-0d21-44fe-aded-6a73d6bb7c91');
+      chatBotEl.setAttribute('user_id', 'dee1b377-9477-4362-bd1b-6d4584033388');
+      chatBotEl.setAttribute('chatbot_id', 'f1017808-baec-4eeb-b537-815f549b091b');
+
+      var chatbotLink = document.createElement('a');
+      chatbotLink.href = 'https://www.chatsimple.ai/?utm_source=widget&utm_medium=referral';
+      chatbotLink.innerHTML = 'chatsimple';
+      chatBotEl.appendChild(chatbotLink);
+
+      document.body.appendChild(chatBotEl);
+
+      // Dynamically load the external script
+      var cs = document.createElement('script');
+      cs.src = 'https://chatsimple-widget.s3.us-east-2.amazonaws.com/chat-bot-loader.js';
+      document.body.appendChild(cs);
+  })();
+</script>
+
       </body>
       </html>
