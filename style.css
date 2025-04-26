@@ -159,6 +159,17 @@ body {
     min-width: 200px;
     z-index: 999;
   }
+  .navbar .dropdown-menu {
+    background-color: #000; /* black background */
+    color: #fff; /* white text */
+  }
+  .navbar .dropdown-menu a {
+    color: #fff; /* links inside dropdown also white */
+  }
+  .navbar .dropdown-menu a:hover {
+    background-color: #333; /* dark gray hover effect */
+  }
+  
 *{
     margin: 0px;
     padding: 0px;
