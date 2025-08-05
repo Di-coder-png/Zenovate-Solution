@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zenovate Soluton- Management Consulting Services</title>
     <!-- <font-awesome-icon></font-awesome-icon> -->
-     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
@@ -28,30 +27,29 @@
         
         <nav class="navbar">
             <div class="navbar-logo">
-                <a href="../index.html"><img id="navbar-logoo" src="Zenovate-solution-icon1.png" alt="Zenovate Logo" ></a>
+              <h1>Zenovate Solution</h1>
             </div>
-            <ul class="navbar-menu">       
+            <ul class="navbar-menu">
+              <li><a href="http://127.0.0.1:5500/Zenovate-solution.HTML/">Home</a></li>
+              <li><a href="http://127.0.0.1:5500/Zenovate-solution.HTML/about.html">About Us</a></li>
+          
               <!-- Dropdown starts -->
               <li class="dropdown">
-                <a href="../services.html">Services ▾</a>
+                <a href="http://127.0.0.1:5500/Zenovate-solution.HTML/services.html">Services ▾</a>
                 <ul class="dropdown-menu">
-                  <li><a href="../Strategy-Consulting.html">Strategy Consulting</a></li>
-                  <li><a href="../business-transformation.html">Business Transformation</a></li>
-                  <li><a href="../technology-consultion.html">Technology Consulting</a></li>
-                  <li><a href="../digital-marketing.html">Digital Marketing</a></li>
+                  <li><a href="http://127.0.0.1:5500/Zenovate-solution.HTML/Strategy-Consulting.html">Strategy Consulting</a></li>
+                  <li><a href="http://127.0.0.1:5500/Zenovate-solution.HTML/business-transformation.html">Business Transformation</a></li>
+                  <li><a href="http://127.0.0.1:5500/Zenovate-solution.HTML/technology-consultion.html">Technology Consulting</a></li>
+                  <li><a href="http://127.0.0.1:5500/Zenovate-solution.HTML/digital-marketing.html#">Digital Marketing</a></li>
                 </ul>
               </li>
               <!-- Dropdown ends -->
-              <li><a href="../">Industries</a></li>
-              <li><a href="../">Insights</a></li>
-              <li><a href="../about.html">About </a></li>
-              <li><a href="../">Careers</a></li>          
-              <li><a href="../contact-us.html">Contact</a></li>
+          
+              <li><a href="http://127.0.0.1:5500/Zenovate-solution.HTML/contact-us.html">Contact Us</a></li>
             </ul>
             
             <div class="navbar-search">
-              <!-- <input type="text" placeholder="Search..."> -->
-              <a href="" class="header-btn">Get Started</a>
+              <input type="text" placeholder="Search...">
             </div>
           </nav>
           
@@ -185,10 +183,10 @@
             <div class="footer-col">
                 <h4>Company</h4>
                 <ul>
-                    <li> <a href="../">Home</a></li>
-                    <li> <a href="../services.html">Services</a></li>
-                    <li> <a href="../about.html">About</a></li>
-                    <li> <a href="../contact-us.html">Contact</a></li>
+                    <li> <a href="http://127.0.0.1:5500/Zenovate-solution.HTML/">Home</a></li>
+                    <li> <a href="http://127.0.0.1:5500/Zenovate-solution.HTML/services.html">Services</a></li>
+                    <li> <a href="http://127.0.0.1:5500/Zenovate-solution.HTML/about.html">About</a></li>
+                    <li> <a href="http://127.0.0.1:5500/Zenovate-solution.HTML/contact-us.html">Contact</a></li>
 
                 </ul>
             </div>
@@ -203,10 +201,10 @@
             <div class="footer-col">
                 <h4>Services</h4>
                 <ul>
-                    <li> <a href="../Strategy-Consulting.html">Strategic consulting</a></li>
-                    <li> <a href="../business-transformation.html">Business Transformation</a></li>
-                    <li> <a href="../technology-consultion.html">Technology Consulting</a></li>
-                    <li> <a href="../digital-marketing.html#">Digital Marketing</a></li>
+                    <li> <a href="http://127.0.0.1:5500/Zenovate-solution.HTML/Strategy-Consulting.html">Strategic Planning</a></li>
+                    <li> <a href="http://127.0.0.1:5500/Zenovate-solution.HTML/business-transformation.html">Business Innovation</a></li>
+                    <li> <a href="http://127.0.0.1:5500/Zenovate-solution.HTML/technology-consultion.html">Process Optimization</a></li>
+                    <li> <a href="http://127.0.0.1:5500/Zenovate-solution.HTML/digital-marketing.html#">Market Analysis</a></li>
                 </ul>
             </div>
             <div class="footer-col">
@@ -222,61 +220,43 @@
     </div>
 </footer>
 
+<!-- Code injected by live-server -->
 <script>
-    window.addEventListener("scroll", function() {
-  const header = document.querySelector("header");
-  header.classList.toggle("scrolled", window.scrollY > 0);
-});
-
-    document.addEventListener("DOMContentLoaded", function () {
-    const navbar = document.querySelector(".navbar");
-    const logoImg = document.getElementById("navbar-logoo");
-    window.addEventListener("scroll", function () {
-      if (window.scrollY > 20) {
-        navbar.classList.add("scrolled");
-        logoImg.src = "Zenovate-solution-logo-white.png"; // Black logo
-        logoImg.style.width = "70px";  // new width
-      logoImg.style.height = "65px";
-      logoImg.style.padding = "0px";  // new width
-      logoImg.style.margin = "0px";
-      } else {
-        navbar.classList.remove("scrolled");
-        logoImg.src = "Zenovate-solution-icon1.1.png"; // White logo
-        logoImg.style.width = "70px";  // new width
-      logoImg.style.height = "65px";
-      }
-    });
-  });
-
-
-
-    
-  </script>
-
-<!-- <co-pilot platform-id="aa343360-051e-4162-bc67-f0726c3ecbed" user-id="dee1b377-9477-4362-bd1b-6d4584033388" chatbot-id="f1017808-baec-4eeb-b537-815f549b091b" is-local="false"><a href="https://www.chatsimple.ai/?utm_source=widget&utm_medium=referral">AI Nav</a></co-pilot> <script src="https://cdn.chatsimple.ai/ai-loader.js" defer></script> -->
- 
-<script type="text/javascript">
-    (function() {
-        // Create and append the chat-bot element
-        var chatBotEl = document.createElement('chat-bot');
-        chatBotEl.setAttribute('platform_id', '223c4780-0d21-44fe-aded-6a73d6bb7c91');
-        chatBotEl.setAttribute('user_id', 'dee1b377-9477-4362-bd1b-6d4584033388');
-        chatBotEl.setAttribute('chatbot_id', 'f1017808-baec-4eeb-b537-815f549b091b');
-
-        var chatbotLink = document.createElement('a');
-        chatbotLink.href = 'https://www.chatsimple.ai/?utm_source=widget&utm_medium=referral';
-        chatbotLink.innerHTML = 'chatsimple';
-        chatBotEl.appendChild(chatbotLink);
-
-        document.body.appendChild(chatBotEl);
-
-        // Dynamically load the external script
-        var cs = document.createElement('script');
-        cs.src = 'https://chatsimple-widget.s3.us-east-2.amazonaws.com/chat-bot-loader.js';
-        document.body.appendChild(cs);
-    })();
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
 </script>
-
-  
 </body>
 </html>
